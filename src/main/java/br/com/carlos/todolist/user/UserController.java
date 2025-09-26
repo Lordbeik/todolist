@@ -29,6 +29,6 @@ public class UserController {
     @PostMapping("/")
     public void create( @RequestBody UserModel userModel){
         //logica de negocio
-            System.out.println(userModel.name);
+            System.out.println(userModel.getUsername());
     }
 }
